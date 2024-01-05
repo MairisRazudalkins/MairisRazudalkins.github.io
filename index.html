@@ -1,100 +1,573 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>Mairis Razudalkins - Portfolio</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-			<div id="wrapper">
-					<header id="header" class="alt">
-						<h1>MAIRIS RAZUDALKINS</h1>
-						<p>GAME PROGRAMMER</p>
-						<ul class="icons">
-							<li><a href="https://twitter.com/razudalkins" class="icon brands fa-twitter alt" target="_blank"><span class="label">Twitter</span></a></li>
-							<li><a href="https://www.linkedin.com/in/mairis-razudalkins/" class="icon brands fa-linkedin alt " target="_blank"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/MairisRazudalkins" class="icon brands fa-github alt" target="_blank"><span class="label">GitHub</span></a></li>
-							<li><a href="mailto:mairis.razudalkins1@gmail.com" class="icon fa fa-envelope alt" target="_blank"><span class="label">Mail</span></a></li>
-						</ul>   
-					</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mairis Razudalking - Portfolio</title>
+    <style>   
+        @import url('https://fonts.cdnfonts.com/css/berlin-sans-fb-demi');
+        @import url(fontawesome-all.min.css);
 
-					<div id="main">
-							<section id="first" class="main special">
-								<header class="major">
-									<h2>Portfolio</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<h3>3D Model Editor</h3>
-										<span class="image"><img src="images/OpenGLProjectIcon.png" alt="" /></span>
-										<p>First year project which was to create a game/program within OpenGL. I wanted to attempt something a little unique so decided on programing a 3D editor. The editor has the ability to move vertices of an imported model/mesh but also export models for use in other programs. <a href = "https://youtu.be/7_ygER0NRfg" target = "_blank">Video showcase</a></p>
-									</li>
-									<li>
-										<h3>DirectX 11</h3>
-										<span class="image"><img src="images/DX11.png" alt="" /></span>
-										<p>Second year project using DirectX11 to create a simple graphics engine that showcases multiple graphical techniques to render meshes. The engine uses HLSL to apply phong and flat shading to un-textured and textured meshes. The engine implements ImGui to log messages but also change lighting properies at runtime for all scene objects. <a href = "https://youtu.be/votCMmu63p8" target = "_blank">Video showcase</a></p>
-									</li>
-									<li>
-										<h3>Mario</h3>
-										<span class="image"><img src="images/MarioIcon.png" alt="" /></span>
-										<p>This is my first year assignment to re-create Mario in SDL2 using C++. I created a level editor alongside the game to easily create new levels which I used to re-create the first orignial level from Super Mario Bros 3 with a few slight changes. The game has a few ai characters implemented just needs a few more adding to make it closer to the original game. <a href = "https://youtu.be/2LrED_N0Zh8" target = "_blank">Video showcase</a></p>
-									</li>
-									<li>
-										<h3>Procedural Generation</h3>
-										<span class="image"><img src="images/ProcGenIcon.png" alt="" /></span>
-										<p>I love procedural generation and creating worlds/meshes that are created through code. This is a UE4 project, I started and currently working on optimizing the procedural generation before going onto creating a game on top of this prototype. I use perlin noise to generatate the world and biomes. The biomes are influenced by more perlin noise which represent temperature, moisture, and height. <a href="https://youtu.be/2tHjmVsfGzs" target="_blank">Early demo showcase</a></p>
-									</li>
-									<li>
-										<h3>Skyrimn't</h3>
-										<span class="image"><img src="images/SkyrimntIcon.png" alt="" /></span>
-										<p>This was a game created for a jam hosted by Staffordshire University and judged by employees of Codemasters and Playground Games. I was the only programmer for this project working in UE4. Avaliable at <a href="https://hacchacc.itch.io/skyrimnt" target="_blank">Itch.io Page</a> <a href="https://youtu.be/auOVwwTJGKk" target="_blank">Video Showcase</a></p>
-									</li>
-									<li>
-										<h3>YA3WWOG</h3>
-										<span class="image"><img src="images/YA3WWOGIcon.png" alt="" /></span>
-										<p>UKIE Game Jam 2020 entry. Working in a team of 5 I programmed the 3C's and projectile mechanics for the game but also involved with bug fixing of puzzle mechanics and UI within Unity. Avaliable at <a href="https://hacchacc.itch.io/ya3wwog-yet-another-3-wizards-with-orbs-game-bethesdnt" target="_blank">Itch.io Page</a></p>
-									</li>
-									<li>
-										<h3>Chat Application</h3>
-										<span class="image"><img src="images/ChatApp.png" alt="" /></span>
-										<p>The chat application is made for demonstrating common networking implementations and solving problems associated with networking by utilizing multi-threading. The application allows users to message privately and globally as well as send images via DM. The server handles game logic for the text based game of rock, paper, scissors which users can play privately. All user information is stored and encrypted on the server for security. <a href = "https://youtu.be/KG1g_Ihv2Fc" target = "_blank">Video showcase</a></p>
-									</li>
-									<li>
-										<h3>Rust Plugins</h3>
-										<span class="image"><img src="images/RustBattleFieldPlugin.png" alt="" /></span>
-										<p>I have been creating plugins for the game Rust since 2018, mostly personal learning projects but currently working on a large scale battlefield mod with a custom map. Source code will be avaliable on GitHub or uMod soon.</p>
-									</li>
-								</ul>
-								<footer class="major">
-								</footer>
-							</section>
-						<section id="intro" class="main">
-							<div class="spotlight">
-								<div class="content">
-									<header class="major">
-										<h2>About Me</h2>
-									</header>
-									<p>
-										I'm a game programmer from the United Kingdom (born in Latvia). Currently studying at Staffordshire University. I studied game development at Loughborough College which gave me good understanding of the game industy and certain industy workflows. I love learning and working on procedurally generated content and enjoy working on personal projects like modding Rust but also making my own games in UE4 and Unity as well as participating in game jams.
-									</p>
-								</div>
-							</div>
-						</section>
+        html {
+            overflow-y: scroll;         /* Add the ability to scroll */
+            scroll-snap-type: mandatory;
+            scroll-snap-points-y: repeat(100vh);
+            scroll-snap-type: y mandatory;
+        }
 
-						<footer id="footer">
-							<p class="copyright">© MairisRazudalkins 2020. Design: <a href="https://html5up.net">HTML5 UP</a></p>
-						  </footer>
-			</div>
+        /* Hide scrollbar for IE, Edge and Firefox */
+        html {
+            -ms-overflow-style: none;   /* IE and Edge */
+            scrollbar-width: none;      /* Firefox */
+        }
 
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        html::-webkit-scrollbar {
+            display: none;
+        }
 
-	</body>
+        body{
+            background-image: url("images/content_bg.png");
+            background-position: center center;
+            background-size: auto auto;
+            background-attachment: fixed;
+
+            font-family: 'Berlin Sans FB Demi', sans-serif;
+            font-weight: bold;
+        }
+
+        body h1, h2, p, a{
+            margin: 0px;
+        }
+
+        section {
+            height: 100vh;
+            scroll-snap-align: start;      
+            padding: 0px 50px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+
+        article{
+            padding: 25px 25px;
+            max-width: 612px;
+        }
+
+        article h2{
+            font-size: 1.5em;
+            color: #cf3e2b;
+        }
+
+        article h1{
+            font-size: 2.5em;
+            color: #cf3e2b;
+        }
+
+        article p{
+            font-size: 1.15em;
+            color: #b73929;
+        }
+
+        .small-p{
+            font-size: 0.9em;
+            color: #b73929;
+        }
+        
+        ul{
+            list-style-type: none;
+            padding: 0px 0px 15px 25px;
+            margin: 0px;
+        }
+
+        ul li{
+            font-size: 1.0em;
+            color: #b73929;
+        }
+
+        a:link {
+            color: #b73929;
+        }
+
+        a:hover{
+            color: #b73929;
+        }
+
+        a:visited {
+            color: #b73929;
+        }
+
+        a:active {
+            text-decoration: underline;
+        }
+
+        .list-container{
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            box-sizing: border-box;
+        }
+
+        .container{
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .container-no-height{
+            display: flex;
+            box-sizing: border-box;
+        }
+
+        .img-container{
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            width: auto;
+            height: auto;
+        }
+
+        .uni-content{
+            padding: 10px;
+        }
+        
+        .uni-content-reverse{
+            padding: 10px;
+        }
+
+        .padded{
+            padding: 5px 5px;
+        }
+
+        .auto-height{
+            height: auto;
+        }
+
+        .horizontal{
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .top{
+            align-items: start;
+        }
+
+        .vertical{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            vertical-align: top;
+        }
+
+        .reverse{
+            flex-direction: row-reverse;
+        }
+
+        .brush-highlight{
+            background-image: url("images/content_highlight.png");
+            background-size: 100% 100%;
+            padding: 15px 30px 35px 30px;
+        }
+
+        .rdr-content p{
+            padding: 0px 0px 15px 0px;
+        }
+
+        .scroll-container{
+            position: fixed;
+            display: flex;
+
+            flex-direction: column;
+            justify-content: center;
+            align-content: flex-end;
+            align-items: center;
+            
+            top: 0px;
+            height: 100vh;
+            right: 1.5%;
+        }
+
+        .square {
+            height: 35px;
+            width: 35px;
+
+            background-image: url('images/nav_btn_bg.png');
+            background-size: cover;
+
+            margin: 10px;
+
+            transition-timing-function: ease-in;
+            transition: 0.2s;
+            transform: rotate(0deg);
+
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .square.selected{
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.2s;
+            transition: 0.2s;
+            transform: rotate(45deg);
+        }
+
+        .inner-square{
+            background-image: url('images/nav_btn.png');
+            background-size: cover;
+
+            margin: 0px;
+
+            transition-timing-function: ease-in-out;
+            transition: 0.2s;
+            transform: scale(0%);
+        }
+
+        .square.selected .inner-square:first-child {
+            height: 70%;
+            width: 70%;
+
+            transition-timing-function: ease-in-out;
+            transition: 0.5s;
+            transform: scale(100%);
+        }
+
+        .social{
+            width: 128px;
+            height: 128px;
+
+            text-decoration: none;
+            font-family: 'Font Awesome 5 Brands';
+        }
+
+        .social::before{
+            font-family: 'Font Awesome 5 Brands';
+        }
+
+        .social > .label {
+            display: none;
+        }
+
+        @media only screen and (min-width: 912px) and (max-width: 1328px) {
+            html{
+                scroll-snap-type: none;
+            }
+
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            section{
+                height: auto;
+                padding: 20px 0px;
+            }
+
+            img {
+                height: auto;
+                width: 95%;
+            }
+
+            article{
+                max-width: 472px;
+            }
+
+            article h1{
+                font-size: 2.5em;
+            }
+
+            article h2{
+                font-size: 1.5em;
+            }
+
+            article p{
+                font-size: 1.15em;
+            }
+
+            .small-article{
+                max-width: 356px;
+            }
+
+            .small-horizontal{
+                flex-direction: row-reverse;
+            }
+
+            .container{
+                height: auto;
+            }
+
+            .horizontal{
+                flex-direction: column;
+            }
+
+            .scroll-container{
+                display: none;
+            }
+
+            .uni-content-reverse{
+                flex-direction: row;
+            }
+
+            .uni-content{
+                flex-direction: row;
+            }
+        }
+
+        @media screen and (max-width: 912px) {
+            html{
+                scroll-snap-type: none;
+            }
+
+            body{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            section{
+                height: auto;
+                padding: 20px 0px;
+            }
+
+            img {
+                height: auto;
+                width: 95%;
+            }
+
+            article{
+                max-width: 472px;
+            }
+
+            article h1{
+                font-size: 2.5em;
+            }
+
+            article h2{
+                font-size: 1.5em;
+            }
+
+            article p{
+                font-size: 1.15em;
+            }
+
+            .small-article{
+                max-width: 356px;
+            }
+
+            .small-horizontal{
+                flex-direction: row-reverse;
+            }
+
+            .container{
+                height: auto;
+            }
+
+            .horizontal{
+                flex-direction: column;
+            }
+
+            .scroll-container{
+                display: none;
+            }
+
+            .uni-content-reverse{
+                flex-direction: column-reverse;
+            }
+
+            .uni-content{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <section>
+            <div class="container horizontal">
+                <div>
+                    <article class="rdr-content brush-highlight">
+                        <h2>RED DEAD REDEMPTION</h2>
+                        <p>
+                            During my placement at Double Eleven (2022-2023), I worked on the 'Red Dead Redemption' port to Switch and Playstation4. I was able to work in a multitude of disiplines that allowed me to learn new languages, tools and to build up my C++ knowledge.
+                        </p>
+                    </article>
+                </div>
+                <div class="img-container">
+                    <img src="images/rdr_img.png" alt="">
+                </div>
+            </div>
+        </section>
+    
+        <section>
+            <div class="container horizontal reverse">
+                <div>
+                    <article class="rdr-content brush-highlight" >
+                        <h2>RUST PLUGINS</h2>
+                        <p>
+                            My introduction to programming was back in 2018 when I started making plugins/mods within the game Rust. The mods started fairly small and grew to larger projects. The biggest being a battlefield type mod, that included custom UI, classes, and a whole custom map that was designed for capture the flag gamemode.
+                        </p>
+                    </article>
+                </div>
+                <div class="img-container">
+                    <img src="images/rust_img.png" alt="">
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <div class="container vertical">
+                <article class="brush-highlight">
+                    <h1>UNIVERSITY WORK</h1>
+                </article>
+                <div class="container horizontal">
+                    <div class="container horizontal uni-content">
+                        <article class="brush-highlight" style="max-width: 356px;">
+                            <h2>MARIO</h2>
+                            <p class="small-p">This is my first year assignment to re-create Mario in SDL2 using C++. I created a level editor alongside the game to easily create new levels which I used to re-create the first orignial level from Super Mario Bros 3 with a few slight changes. The game has a few ai characters implemented just needs a few more adding to make it closer to the original game. <a href = "https://youtu.be/2LrED_N0Zh8" target="_blank">Video showcase</a></p>
+                        </article>
+                        <div class="img-container">
+                            <img src="images/MarioIcon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container horizontal uni-content-reverse">
+                        <div class="img-container">
+                            <img src="images/OpenGLProjectIcon.png" alt="">
+                        </div>
+                        <article class="brush-highlight" style="max-width: 356px;">
+                            <h2>OPENGL 3D MODEL EDITOR</h2>
+                            <p class="small-p">First year project which was to create a game/program within OpenGL. I wanted to attempt something a little unique so decided on programing a 3D editor. The editor has the ability to move vertices of an imported model/mesh but also export models for use in other programs. <a href = "https://youtu.be/7_ygER0NRfg" target="_blank">Video showcase</a></p>
+                        </article>
+                    </div>
+                </div>
+                <div class="container horizontal">
+                    <div class="container horizontal uni-content">
+                        <article class="brush-highlight" style="max-width: 356px;">
+                            <h2>C# CHAT APPLICATION</h2>
+                            <p class="small-p">The chat application is made for demonstrating common networking implementations and solving problems associated with networking by utilizing multi-threading. The application allows users to message privately and globally as well as send images via DM. The server handles game logic for the text based game of rock, paper, scissors which users can play privately. All user information is stored and encrypted on the server for security. <a href = "https://youtu.be/KG1g_Ihv2Fc" target="_blank">Video showcase</a></p>
+                        </article>
+                        <div class="img-container">
+                            <img src="images/ChatApp.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container horizontal uni-content-reverse">
+                        <div class="img-container">
+                            <img src="images/DX11.png" alt="">
+                        </div>
+                        <article class="brush-highlight" style="max-width: 356px;">
+                            <h2>DX11 Engine</h2>
+                            <p class="small-p">Second year project using DirectX11 to create a simple graphics engine that showcases multiple graphical techniques to render meshes. The engine uses HLSL to apply phong and flat shading to un-textured and textured meshes. The engine implements ImGui to log messages but also change lighting properies at runtime for all scene objects. <a href = "https://youtu.be/votCMmu63p8" target="_blank">Video showcase</a></p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container vertical">
+                <article class="brush-highlight">
+                    <h1>PERSONAL PROJECTS</h1>
+                </article>
+                <div class="container horizontal">
+                    <div class="container horizontal uni-content">
+                        <article class="brush-highlight" style="max-width: 356px;">
+                            <h2>YA3WWOG</h2>
+                            <p>UKIE Game Jam 2020 entry. Working in a team of 5 I programmed the 3C's and projectile mechanics for the game but also involved with bug fixing of puzzle mechanics and UI within Unity. Avaliable at <a href="https://hacchacc.itch.io/ya3wwog-yet-another-3-wizards-with-orbs-game-bethesdnt" target="_blank">Itch.io Page</a></p>
+                        </article>
+                        <div class="img-container">
+                            <img src="images/YA3WWOGIcon.png" alt="">
+                        </div>
+                    </div>
+                    <div class="container horizontal uni-content-reverse">
+                        <div class="img-container">
+                            <img src="images/SkyrimntIcon.png" alt="">
+                        </div>
+                        <article class="brush-highlight" style="max-width: 356px;">
+                            <h2>SKYRIMN'T</h2>
+                            <p>This was a game created for a jam hosted by Staffordshire University and judged by employees of Codemasters and Playground Games. I was the only programmer for this project working in UE4. Avaliable at <a href="https://hacchacc.itch.io/skyrimnt" target="_blank">Itch.io Page</a> <a href="https://youtu.be/auOVwwTJGKk" target="_blank">Video Showcase</a></p>
+                        </article>
+                    </div>
+                </div>
+                <div class="container horizontal">
+                    <div class="container horizontal uni-content">
+                        <article class="brush-highlight" style="max-width: 356px;">
+                            <h2>PROCEDURAL GENERATION</h2>
+                            <p>I love procedural generation and creating worlds/meshes that are created through code. This is a UE4 project, I started and currently working on optimizing the procedural generation before going onto creating a game on top of this prototype. I use perlin noise to generatate the world and biomes. The biomes are influenced by more perlin noise which represent temperature, moisture, and height. <a href="https://youtu.be/2tHjmVsfGzs" target="_blank">Early demo showcase</a></p>
+                        </article>
+                        <div class="img-container">
+                            <img src="images/ProcGenIcon.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container vertical">
+                <div style="padding: 0px 0px 50px 0px;">
+                    <article class="rdr-content brush-highlight">
+                        <h2>ABOUT ME</h2>
+                        <p>
+                            I'm a game programmer from the United Kingdom (born in Latvia). Currently studying at Staffordshire University. I studied game development at Loughborough College which gave me good understanding of the game industy and certain industy workflows. I love learning and working on procedurally generated content and enjoy working on personal projects like modding Rust but also making my own games in UE4 and Unity, as well as participating in game jams.
+                        </p>
+                        <a href = "https://twitter.com/razudalkins" target="_blank">Twitter/X</a>
+                        <a href = "https://www.linkedin.com/in/mairis-razudalkins/" target="_blank">LinkedIn</a>
+                        <a href = "https://github.com/MairisRazudalkins" target="_blank">Github</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="scroll-container">
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery-1.6.2.min.js"></script>
+    
+    <script>
+        function UpdateScoller() {
+            let scroll          = Math.round((this.scrollY / $(document).height()));
+            let pageIndex       = Math.round((this.scrollY / $(window).height()));
+            
+            let scrollChildren  = $(".scroll-container").children('.container-no-height').children('.square');
+
+            for ( var i = 0, l = scrollChildren.length; i < l; i++ ) {
+                if (i == pageIndex) 
+                    scrollChildren.eq(pageIndex).addClass('selected');
+                else
+                    scrollChildren.eq(i).removeClass('selected');
+            }
+        }
+
+        document.addEventListener('scroll', function() {
+            UpdateScoller();
+        });
+
+        $(document).ready(function() {
+            for ( var i = 0, l = $(".content section").children().length; i < l; i++ ) {
+                $(".scroll-container").append(`<div class='container-no-height horizontal'><div class="square" id="${i}"><div class="inner-square"></div></div></div>`);
+            }
+
+            UpdateScoller();
+
+            $(".square").click(function() {
+                window.scrollTo({ 
+                    top: window.innerHeight * $(this).attr("id"),
+                    left: 0, 
+                    behavior: 'smooth' 
+                });
+            });
+        });
+    </script>
+</body>
+
 </html>
